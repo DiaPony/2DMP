@@ -62,7 +62,7 @@ public class MyPlayer : MonoBehaviourPun, IPunObservable
         if (photonView.IsMine)
         {
             ProcessInputs();
-            photonView.RPC("FillHPBar", RpcTarget.AllBufferedViaServer);
+            photonView.RPC("FillHPBar", RpcTarget.All);
         }
         else
         {
